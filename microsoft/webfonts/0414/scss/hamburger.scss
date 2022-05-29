@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+
+    .line{
+        width: 80%;
+        height: 50px;
+        border: 1px solid black;
+        position: absolute;
+        left: 50%;  
+        transform: translate(-50%,-50%); 
+        transition: .2s;
+        border-radius: 20px;
+    }
+
+    .line1{
+        top: 25%;
+    }
+    .line2{
+        top: 50%;
+    }
+    .line3{
+        top: 75%;
+    }
+ // 如果想在嵌套狀態下，取得外層的父選擇器，那可以使用「 ＆ 」，它會直接抓父選擇器給你用。
+    &:hover{
+        .line1{
+            top: 50%;
+            background-color: rgb(48, 51, 65);
+            transform:translate(-50%,-50%) rotate(45deg);
+            // 定義哪些 CSS properties 會被轉場效果影響。除了這些被你特別指出的 property 名單，其他的轉場一如以往的會在瞬間完成。
+            transition-property:top ,transform ;
+            transition-delay: 0s , 1s , 2s;
+        }
+        .line2{
+            left: -100%;
+        }
+        .line3{
+            top: 50%;
+            background-color: rgb(48, 51, 65);
+            transform:translate(-50%,-50%) rotate(-45deg);
+            transition-property:top ,transform ;
+            transition-delay: 0s , 1s , 2s;
+        }
+    }
+}

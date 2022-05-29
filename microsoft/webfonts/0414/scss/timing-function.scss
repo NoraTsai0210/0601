@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: mediumturquoise;
+        position: absolute;
+        left: 0;
+        transition: 2s;
+    }
+    .box1{
+        top: 0;
+        transition-timing-function: linear;
+    }
+
+    .box2{
+        top: 25%;
+        transition-timing-function: ease;
+    }
+
+    .box3{
+        top: 50%;
+        transition-timing-function: ease-in;
+    }
+
+    .box4{
+        top: 75%;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover{
+        .box{
+            left: calc(100% - 100px); 
+        }
+    }
+
+}

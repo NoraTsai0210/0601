@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid .row .profile img {
+  height: 200px;
+}
+/*# sourceMappingURL=index.css.map */
