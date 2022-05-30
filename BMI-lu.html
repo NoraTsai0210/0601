@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 計算機</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .container,
+        input,
+        .output,
+        table,
+        th,td {
+            border: 1px dashed cyan;
+        }
+
+        h2 {
+            color: blue;
+            margin-top: 0;
+        }
+
+        .inner-div, 
+        button {
+            font-size: 16px; 
+            font-weight: bold;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        .output {
+            margin: auto;
+            width: 250px;
+        }
+
+        .input,
+        .output {
+            height: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: cyan;
+            border-color: 1px solid blue;
+            color: blue;
+        }
+
+        table.center {
+            width: 500px;
+            margin: auto;
+        }
+
+        .active{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <h2>BMI 計算機</h2>
+        <h3>身體質量指數(Body Mass Index，簡稱BMI）是公認用來估計肥胖程度的方法</h3>
+        <h3>BMI = 體重(公斤)/身高的平方(公尺)</h3>
+        <div class="inner-div">
+            男 <input type="radio" value="0" v-model="gender"> 女 <input type="radio" value="1" v-model="gender">
+            我的身高 :&nbsp;
+            <input id="human-height" type="number" min="0" v-model="height"> 公分&nbsp;&nbsp;
+
+            我的體重 :&nbsp;
+            <input id="human-weight" type="number" min="0" v-model="weight"> 公斤&nbsp;&nbsp;
+            <!-- <button id="calc">計算</button> -->
+            &nbsp;&nbsp;
+            <button id="reset" @click="clear()">重新填寫</button>
+            <br><br>
+            <div id="result" class="output" v-text="bmi()"></div>
+            <br><br>
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th colspan="3">BMI值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>男 性</td>
+                        <td>女 性</td>
+                    </tr>
+                    <tr>
+                        <td :class="{ active: isActive('1')}">體重過輕</td>
+                        <td :class="{ active: isActive('10')}">
+                            &lt; 20</td>
+                        <td :class="{ active: isActive('11')}">
+                            &lt; 19</td>
+                    </tr>
+                    <tr>
+                        <td :class="{ active: isActive('2')}">正常範圍</td>
+                        <td :class="{ active: isActive('20')}">20 - 25</td>
+                        <td :class="{ active: isActive('21')}">19 - 25</td>
+                    </tr>
+                    <tr>
+                        <td :class="{ active: isActive('3')}">體重過胖</td>
+                        <td :class="{ active: isActive('30')}">25 - 30</td>
+                        <td :class="{ active: isActive('31')}">25 - 30</td>
+                    </tr>
+                    <tr>
+                        <td :class="{ active: isActive('4')}">肥胖</td>
+                        <td :class="{ active: isActive('40')}">30 - 40</td>
+                        <td :class="{ active: isActive('41')}">30 - 40</td>
+                    </tr>
+                    <tr>
+                        <td :class="{ active: isActive('5')}">病態肥胖</td>
+                        <td :class="{ active: isActive('50')}">
+                            &gt; 40</td>
+                        <td :class="{ active: isActive('51')}">
+                            &gt; 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+        <br>
+    </div>
+
+    
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+
+    <script>
+        // Vue=>採用關注點分離
+        Vue.createApp({
+            // date：函式=>處理資料=>資料直接對應到畫面
+            data: function () {
+                return {
+                    height: 0,
+                    weight: 0,
+                    gender: 0,
+                    my_active: 0,
+                }
+            },
+            // methods：物件=>方法
+            methods: {
+                bmi(){
+                    answer = this.weight / ((this.height / 100) **2);
+                    this.my_active = answer ? this.active_result(answer,this.gender) : '0' 
+                    return answer ? answer.toFixed(2) : 0;
+
+                    // 條件 (三元) 運算子 是 JavaScript 唯一用到三個運算元的運算子：
+                    // 在一個條件後面會跟著一個問號 (?)，
+                    // 如果條件是 truthy 在冒號(:)前的表達式會被執行，
+                    // 如果條件是 falsy 在冒號後面的表達式會被執行，
+                    // 這個運算子常常被用來當作 if 的簡潔寫法.
+
+                },
+
+                isActive(td1_or_td23){
+                    if(td1_or_td23.length === 1){
+                        return(this.my_active[0] === td1_or_td23);
+                    }else{
+                        return(this.my_active === td1_or_td23);
+                    }
+                },
+
+                active_result(answer,gender){
+                    if(answer > 40){
+                        return '5' + gender;
+                    }
+                    if(answer > 30){
+                        return '4' + gender;
+                    }
+                    if(answer > 25){
+                        return '3' + gender;
+                    }
+                    if(answer >= 20 && gender === '0'){
+                        return '2' + gender;
+                    }
+                    if(answer >= 19 && gender === '1'){
+                        return '2' + gender;
+                    }
+                    return '1' + gender;
+                
+                },
+
+            },
+            // mounted 函式=>做初始化=>一開始的時候只執行一次
+            mounted: function () {
+
+            },
+        }).mount('#app');
+    </script>
+<!--     
+    <script>
+        // var calcBtn = document.querySelector('#calc');
+        // var resetBtn = document.querySelector('#reset');
+        // var heightSelector = document.querySelector('#human-height');
+        // var weightSelector = document.querySelector('#human-weight');
+        // var resulrSelector = document.querySelector('#result')
+
+        // calcBtn.addEventListener('click', function () {
+        //     var height = heightSelector.value;
+        //     var weight = weightSelector.value;
+        //     var result = (Number(weight) / (Number(height) / 100) ** 2).toFixed(1);
+        //     resulrSelector.innerHTML = result;
+        // });
+
+        // resetBtn.addEventListener('click', function () {
+        //     heightSelector.value = "";
+        //     weightSelector.value = "";
+        //     resulrSelector.innerHTML = "";
+        // });
+    </script> -->
+</body>
+
+</html>
