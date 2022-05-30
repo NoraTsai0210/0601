@@ -19,7 +19,7 @@
         <div class="row d-flex">
             <div class="col-12 col-lg-5 profile text-center">
                 <img src="./img/profile.png" alt="">
-                <h3>蔡閔婷 Nora</h3>
+                <h3 class="pt-2">蔡閔婷 Nora</h3>
                 <p><i class="bi bi-calendar2"></i>：1992.02.10</p>
                 <p><i class="bi bi-phone-fill"></i>：0987357709</p>
                 <p><i class="bi bi-mailbox"></i>：hfa45yt@yahoo.com.tw</p>
@@ -58,16 +58,17 @@
                     data-bs-target="#pills-illustraor">illustraor</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-microsoft-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-microsoft">微軟仿切</button>
+                <a href="https://noratsai0210.github.io/microsoft/"><button class="nav-link" id="pills-microsoft-tab" >微軟仿切</button></a>
+                <!-- <button class="nav-link" id="pills-microsoft-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-microsoft">微軟仿切</button> -->
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-bootstrap-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-bootstrap">bootstrap方塊</button>
+                <a href="https://noratsai0210.github.io/HW-bootstrap/"><button class="nav-link" id="pills-bootstrap-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-bootstrap">bootstrap方塊</button></a>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-game-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-game">猜拳</button>
+                <a href="https://noratsai0210.github.io/game/"><button class="nav-link" id="pills-game-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-game">猜拳</button></a>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-weather-tab" data-bs-toggle="pill"
@@ -164,13 +165,24 @@
 
 
         <div class="tab-pane fade" id="pills-microsoft" role="tabpanel" aria-labelledby="pills-microsoft-tab">
-
+            
         </div>
         <div class="tab-pane fade" id="pills-bootstrap" role="tabpanel" aria-labelledby="pills-bootstrap-tab">
-
+           
         </div>
         <div class="tab-pane fade" id="pills-game" role="tabpanel" aria-labelledby="pills-game-tab">
-            
+            <!-- <div class="all d-flex">
+                <div class="yours scissors">剪刀
+                    <img src="./game/game/img/scissors.png" alt="">
+                </div>
+                <div class="yours rock">石頭
+                    <img src="./game/game/img/rock.png" alt="">
+                </div>
+                <div class="yours paper"> 布 
+                    <img src="./game/game/img/paper.png" alt="">
+                </div>
+            </div>
+            <div class="result"></div> -->
         </div>
         <div class="tab-pane fade" id="pills-weather" role="tabpanel" aria-labelledby="pills-weather-tab">
 
@@ -182,63 +194,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
-        <script>
-        
-            let yoursAll = document.querySelectorAll('.yours');
-            let result = document.querySelector('.result');
-    
-            // forEach(個體,註標/索引), 註標從0開始
-            yoursAll.forEach(function(yours,index){
-                yours.addEventListener('click',function(){
-                    console.log(yours,index);
-                    
-                    // 清空結果
-                    result.innerHTML = '';
-                    //電腦出牌
-                    let computer = Math.floor(Math.random()*3 ) +1;
-                    console.log(computer);
-                    //顯示兩家的牌
-                    let yours_index = index + 1;
-                    
-    
-                   
-                    your_s = outText(yours_index); //傳回玩家出牌的對應中文
-    
-                    computer_s = outText(computer); //傳回電腦出牌的對應中文
-                   
-                    out1  = win(yours_index,computer);
-                    
-                    
-                    result.innerHTML ='<br><br><br><br><br><br><br><br><br><br>' +'玩家出：' + outText(yours_index) + '，電腦出：' +  outText(computer) + '<br>' + win(yours_index,computer)
-                })
-            })
-    
-            // 函數 處理輸出牌中文
-            function outText(card) { //card傳入給函數的參數
-                if(card == 1 ){
-                    return "剪刀"; //回傳一個值"1.剪刀"
-                }
-                if(card == 2 ){
-                    return "石頭"; 
-                }
-                    return "布";
-            }
-    
-            // 判斷輸贏
-            function win(you,another){ //參數可以輸入非常多值
-                if (you - another == 0){
-                    return "Try again~~" ;
-                }
-                if (you - another == -1 || you - another == 2){
-                    return "Sorry~ you lose" ;
-                }
-                if (you - another == 1 || you - another == -2){
-                    return "Congrate! you win!!" ;
-                }
-            }
-    
-    
-        </script>    
+ 
         
 </body>
 
