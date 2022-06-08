@@ -3,13 +3,25 @@
   margin: 0;
 }
 
-.container-fluid {
-  font-family: 'Mulish', sans-serif;
+main #about {
   font-family: 'Mulish', sans-serif;
   font-family: 'Noto Serif TC', serif;
 }
 
-.container-fluid .row .profile img {
-  height: 200px;
+main #about .profile .text-detail {
+  font-size: 12px;
+  color: darkslateblue;
+}
+
+main #about .profile .photo img {
+  max-height: 250px;
+}
+
+main #about .language p {
+  letter-spacing: 3px;
+}
+
+main #about .work p {
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=index.css.map */
