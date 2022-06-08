@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+
     <!-- 中文字體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,168 +26,199 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row d-flex">
-            <div class="col-12 col-lg-5 profile text-center">
-                <img src="./img/profile.png" alt="">
-                <h3 class="py-2 text-dark">蔡閔婷 Nora</h3>
-                <p><i class="bi bi-calendar2"></i>：1992.02.10</p>
-                <p><i class="bi bi-phone-fill"></i>：0987357709</p>
-                <p><i class="bi bi-mailbox"></i>：hfa45yt@yahoo.com.tw</p>
+    <header>
+        <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://noratsai0210.github.io/portfolio/">
+                    <img src="./img/profile.png" alt="" width="24" height="24"
+                        class="d-inline-block align-text-top">
+                    Nora
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
 
-            <div class="col-12 col-lg-7 pt-1 profile text-lg-start text-center text-black-50">
-                <div class="education text-success">
-                    <span>學歷：</span>
-                    <p>東吳大學 日文系 (2014/06畢)</p>
-                </div>
-                <div class="workexperiennce text-success">
-                    <span class="d-block">工作經歷：</span>
-                    <p class="m-0">2015/04-2016/08 信星鞋業 採購助理</p>
-                    <p>2016/11-2017/09 全興皮件有限公司 業務助理</p>
-                </div>
-                <div class="language">
-                    <span>語文</span>
-                    <p class="m-0">英文：普通</p>
-                    <p>日本語できるですが、下手です。(N2)</p>
-                </div>
-                <p style="font-size: 14px;">
-                    2017年離開職場前，曾經在兩家公司服務過，工作內容主要以文書行政為主。<br>
-                    第一份工作任職於信興鞋業，擔任採購助理，工作內容為協助採購單據的查詢及下單的工作、ERP輸入、追蹤樣品，主管交辦事項等。<br>
-                    第二份工作於全興皮件擔任業務助理，整理訂單資料，定期提供銷售狀況報表，簡易會計帳務整理及主管交辦事項等。<br>
-                    到澳洲working holiday近一年半，體驗了不同面貌的生活方式，更勇於面對了各項挑戰，也增強抗壓性。<br>
-                    參加職訓前為全職媽媽，照顧孩子讓我增長耐心，也更能臨危不亂。
-                </p>
+    </header>
 
+    <main>
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-12 col-lg-5 profile text-center">
+                    <img src="./img/profile.png" alt="">
+                    <h3 class="py-2 text-dark">蔡閔婷 Nora</h3>
+                    <p><i class="bi bi-phone-fill"></i>：0987357709</p>
+                    <p><i class="bi bi-mailbox"></i>：hfa45yt@yahoo.com.tw</p>
+                </div>
+
+                <div class="col-12 col-lg-7 pt-1 profile text-lg-start text-center text-black-50">
+                    <div class="education text-success">
+                        <span>學歷：</span>
+                        <p>東吳大學 日文系 (2014/06畢)</p>
+                    </div>
+                    <div class="workexperiennce text-success">
+                        <span class="d-block">工作經歷：</span>
+                        <p class="m-0">2015/04-2016/08 信星鞋業 採購助理</p>
+                        <p>2016/11-2017/09 全興皮件有限公司 業務助理</p>
+                    </div>
+                    <div class="language">
+                        <span>語文</span>
+                        <p class="m-0">英文：普通</p>
+                        <p>日本語できるですが、下手です。(N2)</p>
+                    </div>
+                    <p style="font-size: 14px;">
+                        
+                    </p>
+
+                </div>
             </div>
         </div>
-    </div>
 
-    <ul class="nav justify-content-center pb-4 ">
-        <p>網頁連結：</p>
-        <li class="nav-item">
-            <a class="nav-link link-info active" href="https://noratsai0210.github.io/parallax/">parallax</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link link-info" href="https://noratsai0210.github.io/microsoft/">微軟仿切</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link link-info" href="https://noratsai0210.github.io/bootstrap/">bootstrap方塊</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link link-info" href="https://noratsai0210.github.io/game/">猜拳遊戲</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link link-info" href="https://noratsai0210.github.io/weather/">weather forecast</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link link-info" href="https://noratsai0210.github.io/bmi/
-            ">BMI</a>
-        </li>
-
-    </ul>
-
-
-    <div class="container pb-1">
-        <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link  active" id="pills-photoshop-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-photoshop">photoshop</button>
+        <ul class="nav justify-content-center pb-4 ">
+            <p>網頁連結：</p>
+            <li class="nav-item">
+                <a class="nav-link link-info active" href="https://noratsai0210.github.io/parallax/">parallax</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-info" href="https://noratsai0210.github.io/microsoft/">微軟仿切</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-info" href="https://noratsai0210.github.io/bootstrap/">bootstrap方塊</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-info" href="https://noratsai0210.github.io/game/">猜拳遊戲</a>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-illustraor-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-illustraor">illustraor</button>
+                <a class="nav-link link-info" href="https://noratsai0210.github.io/weather/">weather forecast</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link link-info" href="https://noratsai0210.github.io/bmi/
+            ">BMI</a>
             </li>
 
         </ul>
-    </div>
 
+        <div class="container pb-1">
+            <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link  active" id="pills-photoshop-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-photoshop">photoshop</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-illustraor-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-illustraor">illustraor</button>
+                </li>
 
+            </ul>
+        </div>
 
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-photoshop" role="tabpanel"
-            aria-labelledby="pills-photoshop-tab">
-            <div class="d-flex justify-content-around py-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/photoshop/0317-ball .jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-0">
-                        <img src="./img/photoshop/ball-original.jpg" alt="" style="width: 100px;">
-                        <p class="card-text"></p>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-photoshop" role="tabpanel"
+                aria-labelledby="pills-photoshop-tab">
+                <div class="d-flex justify-content-around py-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/photoshop/0317-ball .jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <img src="./img/photoshop/ball-original.jpg" alt="" style="width: 100px;">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/photoshop/0317-Apple.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <img src="./img/photoshop/Apple-o.jpg" alt="" style="width: 100px;">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/photoshop/0317-woman.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <img src="./img/photoshop/4-01.jpg" alt="" style="width: 100px;">
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/photoshop/0317-Apple.jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-0">
-                        <img src="./img/photoshop/Apple-o.jpg" alt="" style="width: 100px;">
-                        <p class="card-text"></p>
+                <div class="d-flex justify-content-around py-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/photoshop/0318-wedding-gown.jpg" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/photoshop/0318-color.jpg" class="card-img-top w-100 h-100" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/photoshop/0317-woman.jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-0">
-                        <img src="./img/photoshop/4-01.jpg" alt="" style="width: 100px;">
-                        <p class="card-text"></p>
-                    </div>
-                </div>
+
             </div>
-            <div class="d-flex justify-content-around py-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/photoshop/0318-wedding-gown.jpg" class="card-img-top w-100" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"></p>
+
+            <div class="tab-pane fade" id="pills-illustraor" role="tabpanel" aria-labelledby="pills-illustraor-tab">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="0" class="active border-0" aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="1" class="border-0" aria-label="Slide 2"></button>
+                        <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="2" class="border-0" aria-label="Slide 3"></button>
+                        <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="3" class="border-0" aria-label="Slide 4"></button>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/photoshop/0318-color.jpg" class="card-img-top w-100 h-100" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"></p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/illustrator/2022-03-21-moon.jpg" class="d-block w-50 mx-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/illustrator/2022-03-21-umbrella.jpg" class="d-block w-50 mx-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/illustrator/2022-03-23-dodoro.jpg" class="d-block w-50 mx-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/illustrator/2022-03-22-LOW POLY.jpg" class="d-block w-50 mx-auto" alt="...">
+                        </div>
                     </div>
+
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </div>
+    </main>
 
-        <div class="tab-pane fade" id="pills-illustraor" role="tabpanel" aria-labelledby="pills-illustraor-tab">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="0" class="active border-0" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="1" class="border-0" aria-label="Slide 2"></button>
-                    <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="2" class="border-0" aria-label="Slide 3"></button>
-                    <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="3" class="border-0" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/illustrator/2022-03-21-moon.jpg" class="d-block w-50 mx-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/illustrator/2022-03-21-umbrella.jpg" class="d-block w-50 mx-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/illustrator/2022-03-23-dodoro.jpg" class="d-block w-50 mx-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/illustrator/2022-03-22-LOW POLY.jpg" class="d-block w-50 mx-auto" alt="...">
-                    </div>
-                </div>
+    <footer>
+        <div class="container">
+            <p>Copyright © 2022 NoraTsai. All rights reserved.</p>
 
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-
-    </div>
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
