@@ -21,7 +21,7 @@ main #experience .timeline {
   padding: 20px 0 20px;
 }
 
-main #experience .timeline::before {
+main #experience .timeline:before {
   top: 0;
   bottom: 0;
   position: absolute;
@@ -33,7 +33,7 @@ main #experience .timeline::before {
 }
 
 @media (max-width: 767px) {
-  main #experience .timeline::before {
+  main #experience .timeline:before {
     left: 40px;
   }
 }
@@ -43,12 +43,12 @@ main #experience .timeline li {
   position: relative;
 }
 
-main #experience .timeline li::before {
+main #experience .timeline li:before {
   content: " ";
   display: table;
 }
 
-main #experience .timeline li::after {
+main #experience .timeline li:after {
   content: " ";
   display: table;
   clear: both;
@@ -75,7 +75,7 @@ main #experience .timeline li .timeline-panel {
   }
 }
 
-main #experience .timeline li .timeline-panel::before {
+main #experience .timeline li .timeline-panel:before {
   position: absolute;
   top: 26px;
   right: -15px;
@@ -88,7 +88,7 @@ main #experience .timeline li .timeline-panel::before {
 }
 
 @media (max-width: 767px) {
-  main #experience .timeline li .timeline-panel::before {
+  main #experience .timeline li .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
@@ -96,7 +96,7 @@ main #experience .timeline li .timeline-panel::before {
   }
 }
 
-main #experience .timeline li .timeline-panel::after {
+main #experience .timeline li .timeline-panel:after {
   position: absolute;
   top: 27px;
   right: -14px;
@@ -109,7 +109,7 @@ main #experience .timeline li .timeline-panel::after {
 }
 
 @media (max-width: 767px) {
-  main #experience .timeline li .timeline-panel::after {
+  main #experience .timeline li .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
@@ -152,14 +152,14 @@ main #experience .timeline .timeline-inverted .timeline-panel {
   float: right;
 }
 
-main #experience .timeline .timeline-inverted .timeline-panel::before {
+main #experience .timeline .timeline-inverted .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
 
-main #experience .timeline .timeline-inverted .timeline-panel::after {
+main #experience .timeline .timeline-inverted .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;

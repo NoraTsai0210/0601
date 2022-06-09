@@ -27,7 +27,7 @@ main {
             list-style: none;
             padding: 20px 0 20px;
 
-            &::before {
+            &:before {
                 top: 0;
                 bottom: 0;
                 position: absolute;
@@ -45,11 +45,11 @@ main {
                 margin-bottom: 20px;
                 position: relative;
 
-                &::before {
+                &:before {
                     content: " ";
                     display: table;
                 }
-                &::after {
+                &:after {
                     content: " ";
                     display: table;
                     clear: both;
@@ -70,7 +70,7 @@ main {
                         float: right;
                     }
 
-                    &::before {
+                    &:before {
                         position: absolute;
                         top: 26px;
                         right: -15px;
@@ -87,7 +87,7 @@ main {
                             right: auto;
                         }
                     }
-                    &::after {
+                    &:after {
                         position: absolute;
                         top: 27px;
                         right: -14px;
@@ -142,13 +142,13 @@ main {
                 .timeline-panel {
                     float: right;
 
-                    &::before {
+                    &:before {
                         border-left-width: 0;
                         border-right-width: 15px;
                         left: -15px;
                         right: auto;
                     }
-                    &::after {
+                    &:after {
                         border-left-width: 0;
                         border-right-width: 14px;
                         left: -14px;
