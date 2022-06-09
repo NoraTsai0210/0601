@@ -9,7 +9,6 @@ main #about {
 }
 
 main #about .profile .text-detail {
-  font-size: 12px;
   color: darkslateblue;
 }
 
@@ -17,11 +16,153 @@ main #about .profile .photo img {
   max-height: 250px;
 }
 
-main #about .language p {
-  letter-spacing: 3px;
+main #experience .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
 }
 
-main #about .work p {
-  letter-spacing: 1px;
+main #experience .timeline::before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+@media (max-width: 767px) {
+  main #experience .timeline::before {
+    left: 40px;
+  }
+}
+
+main #experience .timeline li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+main #experience .timeline li::before {
+  content: " ";
+  display: table;
+}
+
+main #experience .timeline li::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+main #experience .timeline li img {
+  width: 40px;
+}
+
+main #experience .timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+@media (max-width: 767px) {
+  main #experience .timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    float: right;
+  }
+}
+
+main #experience .timeline li .timeline-panel::before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+@media (max-width: 767px) {
+  main #experience .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+}
+
+main #experience .timeline li .timeline-panel::after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+@media (max-width: 767px) {
+  main #experience .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
+main #experience .timeline li .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.5em;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+}
+
+@media (max-width: 767px) {
+  main #experience .timeline li .timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+}
+
+main #experience .timeline li .timeline-body p {
+  margin-bottom: 0;
+}
+
+main #experience .timeline li .timeline-body p + p {
+  margin-top: 5px;
+}
+
+main #experience .timeline li .timeline-body ul {
+  margin-bottom: 0;
+}
+
+main #experience .timeline .timeline-inverted .timeline-panel {
+  float: right;
+}
+
+main #experience .timeline .timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+main #experience .timeline .timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
 }
 /*# sourceMappingURL=index.css.map */
