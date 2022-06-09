@@ -6,6 +6,7 @@
 main #about {
   font-family: 'Mulish', sans-serif;
   font-family: 'Noto Serif TC', serif;
+  height: calc(100vh - 58px);
 }
 
 main #about .profile .text-detail {
@@ -164,5 +165,43 @@ main #experience .timeline .timeline-inverted .timeline-panel:after {
   border-right-width: 14px;
   left: -14px;
   right: auto;
+}
+
+main #BackTop {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 33%;
+  cursor: pointer;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+
+main #BackTop:before {
+  width: 31px;
+  height: 7px;
+  border-radius: 3px;
+  background: #ded3b5;
+  position: absolute;
+  content: "";
+  -webkit-transform: rotate(-45deg) translate(0, -50%);
+          transform: rotate(-45deg) translate(0, -50%);
+  left: 0.4rem;
+}
+
+main #BackTop:after {
+  width: 31px;
+  height: 7px;
+  border-radius: 3px;
+  background: #ded3b5;
+  position: absolute;
+  content: "";
+  -webkit-transform: rotate(45deg) translate(0, -50%);
+          transform: rotate(45deg) translate(0, -50%);
+  right: 0.4rem;
+}
+
+main #BackTop:focus {
+  outline: none;
 }
 /*# sourceMappingURL=index.css.map */

@@ -7,6 +7,7 @@ main {
     #about {
         font-family: 'Mulish', sans-serif;
         font-family: 'Noto Serif TC', serif;
+        height: calc(100vh - 58px);
 
         .profile {
             .text-detail {
@@ -165,4 +166,40 @@ main {
 
         
     }
+
+    #BackTop{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 33%;
+        cursor: pointer;
+        right: 1rem;
+        bottom: 1rem;
+        display: none;
+        &:before{
+            width: 31px;
+            height: 7px;
+            border-radius: 3px;
+            background: rgb(222, 211, 181);
+            position: absolute;
+            content: "";
+            transform: rotate(-45deg) translate(0, -50%);
+            left: 0.4rem;
+        }
+
+        &:after{
+            width: 31px;
+            height: 7px;
+            border-radius: 3px;
+            background: rgb(222, 211, 181);
+            position: absolute;
+            content: "";
+            transform: rotate(45deg) translate(0, -50%);
+            right: 0.4rem;
+        }
+        &:focus{
+            outline: none;
+        }
+
+    }
+    
 }

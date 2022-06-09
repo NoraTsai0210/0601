@@ -48,6 +48,9 @@
                             <a class="nav-link" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                     </ul>
@@ -64,7 +67,7 @@
 
     <main>
 
-        <div class="container-fluid pb-5 mb-5" id="about">
+        <div class="container-fluid " id="about">
             <div class="row d-flex profile">
                 <div class="col-12 col-md-9 text-center text-black-50">
                     <h3 class="py-2 text-dark">蔡閔婷 Nora</h3>
@@ -84,15 +87,13 @@
         </div>
 
         <div class="container-fluid pb-5" id="experience">
-
+            <h1>Experience</h1>
             <ul class="timeline position-relative">
                 <li>
                     <div class="timeline-badge position-absolute text-center bg-secondary rounded-circle">
-                        <span>職前訓練</span> 
+                        <span>職前訓練</span>
                     </div>
-                    <div class="timeline-panel position-relative"
-                    data-aos="zoom-in-right" 
-                    data-aos-duration="2000">
+                    <div class="timeline-panel position-relative" data-aos="zoom-in-right" data-aos-duration="2000">
                         <div class="timeline-heading d-flex">
                             <h5 class="timeline-title mt-0">上益資訊 前端工程師暨JS框架應用培訓班</h5>
                         </div>
@@ -105,11 +106,9 @@
                     <div class="timeline-badge position-absolute text-center bg-warning rounded-circle">
                         <img src="./img/Australia_stub.svg.png" alt="">
                     </div>
-                    <div class="timeline-panel position-relative"
-                    data-aos="zoom-in-left" 
-                    data-aos-duration="2000"
-                    data-aos-delay="300">
-                        <div class="timeline-heading" >
+                    <div class="timeline-panel position-relative" data-aos="zoom-in-left" data-aos-duration="2000"
+                        data-aos-delay="300">
+                        <div class="timeline-heading">
                             <h4 class="timeline-title mt-0">Working Holiday in Australia</h4>
                         </div>
                         <div class="timeline-body">
@@ -121,9 +120,7 @@
                     <div class="timeline-badge position-absolute text-center bg-danger rounded-circle">
                         2016
                     </div>
-                    <div class="timeline-panel position-relative"
-                    data-aos="zoom-in-right" 
-                    data-aos-duration="2000">
+                    <div class="timeline-panel position-relative" data-aos="zoom-in-right" data-aos-duration="2000">
                         <div class="timeline-heading d-flex">
                             <h4 class="timeline-title mt-0">全興皮件有限公司</h4>
                             <h5 class="ps-3">業務助理</h5>
@@ -138,10 +135,8 @@
                     <div class="timeline-badge position-absolute text-center bg-success rounded-circle">
                         2015
                     </div>
-                    <div class="timeline-panel position-relative"
-                    data-aos="zoom-in-left" 
-                    data-aos-duration="2000">
-                        <div class="timeline-heading d-flex" >
+                    <div class="timeline-panel position-relative" data-aos="zoom-in-left" data-aos-duration="2000">
+                        <div class="timeline-heading d-flex">
                             <h4 class="timeline-title mt-0">信星鞋業</h4>
                             <h5 class="ps-3">採購助理</h5>
                         </div>
@@ -155,11 +150,9 @@
                     <div class="timeline-badge position-absolute text-center bg-primary rounded-circle">
                         2014
                     </div>
-                    <div class="timeline-panel position-relative"
-                    data-aos="zoom-in-right" 
-                    data-aos-duration="2000">
+                    <div class="timeline-panel position-relative" data-aos="zoom-in-right" data-aos-duration="2000">
                         <div class="timeline-heading d-flex">
-                            <h4 class="timeline-title mt-0">東吳大學  </h4>
+                            <h4 class="timeline-title mt-0">東吳大學 </h4>
                             <h5 class="ps-3">日文系畢業</h5>
                         </div>
                         <div class="timeline-body">
@@ -172,7 +165,44 @@
 
         </div>
 
+        <div class="container-fluid pb-5" id="skills">
+            <h1>Skills</h1>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <h4>Web Layout</h4>
+                    <hr>
+                    <ul>
+                        <li>HTML5、CSS3</li>
+                        <li>手刻RWD 響應式網頁</li>
+                        <li>SASS/SCSS預處理器</li>
+                        <li>Bootstrap</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>JavaScript</h4>
+                    <hr>
+                    <ul>
+                        <li>JavaScript 基本語法</li>
+                        <li>AJAX / JSON 串接第三方API</li>
+                        <li>Vue 框架</li>
+                        <!-- <li>AOS (Animate on scroll library)</li> -->
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Others</h4>
+                    <hr>
+                    <h5>Figma</h5>
+                    <h5>Photoshop</h5>
+                    <h5>Illustrator</h5>
+
+                </div>
+            </div>
+        </div>
+
         <div class="container-fluid pb-5" id="portfolio">
+            <h1>Portfolio</h1>
             <ul class="nav justify-content-center pb-4 ">
                 <p>網頁連結：</p>
                 <li class="nav-item">
@@ -305,6 +335,8 @@
 
             </div>
         </div>
+
+        <button type="button" id="BackTop" class="toTop-arrow position-fixed border-0 bg-secondary bg-opacity-75"></button>
     </main>
 
     <footer>
@@ -321,9 +353,27 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
         AOS.init();
-      </script>
+
+        $(function () {
+            $('#BackTop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 333);
+            });
+            // 當點擊這個按鈕時，自動捲動到網頁最上方，0.333秒完成捲動的動作
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#BackTop').fadeIn(222);
+                    // 判斷網頁可視範圍的最上方距離網頁頂端是否超過300px,超過的話以0.222秒的特效顯示按鈕
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                    // 未超過300px，先停止正在進行的特效，接著以 0.222秒的特效隱藏按鈕
+                }
+            }).scroll();
+        });
+    </script>
 
 
 
