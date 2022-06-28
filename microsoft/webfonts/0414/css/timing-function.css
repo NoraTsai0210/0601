@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,42 +14,30 @@ body {
   margin: 0 auto;
   position: relative;
 }
-
 .container .box {
   width: 100px;
   height: 100px;
   background-color: mediumturquoise;
   position: absolute;
   left: 0;
-  -webkit-transition: 2s;
   transition: 2s;
 }
-
 .container .box1 {
   top: 0;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-timing-function: linear;
 }
-
 .container .box2 {
   top: 25%;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+  transition-timing-function: ease;
 }
-
 .container .box3 {
   top: 50%;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
-
 .container .box4 {
   top: 75%;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
-
 .container:hover .box {
   left: calc(100% - 100px);
-}
-/*# sourceMappingURL=timing-function.css.map */
+}/*# sourceMappingURL=timing-function.css.map */

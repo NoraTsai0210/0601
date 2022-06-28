@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nora Tsai</title>
+    <title>Nora 蔡閔婷</title>
+    <base href="/">
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -24,6 +26,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -32,7 +41,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="https://noratsai0210.github.io/Nora.Tsai/">
                     <img src="./img/profile.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-                    Nora
+                    Min-Ting
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -78,11 +87,16 @@
 
                         <p class="text-detail">完全沒有接觸過，但對新事物都願意學習</p>
                     </div>
-
                 </div>
+
                 <div class="col-12 col-md-3 photo d-flex justify-content-center justify-content-md-start">
                     <img class="rounded-4 " src="./img/S__6266901.jpg" alt="">
                 </div>
+
+            </div>
+            <div class="row text-center">
+                <p>30而立後才踏入程式領域探索的二度就業媽媽</p>
+
             </div>
         </div>
 
@@ -203,53 +217,263 @@
 
         <div class="container-fluid pb-5" id="portfolio">
             <h1>Portfolio</h1>
-            <ul class="nav justify-content-center pb-4 ">
-                <p>網頁連結：</p>
-                <li class="nav-item">
-                    <a class="nav-link link-info active" href="https://noratsai0210.github.io/parallax/" target="_blank"
-                        title="">parallax</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-info" href="https://noratsai0210.github.io/microsoft/" target="_blank"
-                        title="">微軟仿切</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-info" href="https://noratsai0210.github.io/bootstrap/" target="_blank"
-                        title="">bootstrap方塊</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-info" href="https://noratsai0210.github.io/game/" target="_blank"
-                        title="">猜拳遊戲</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link link-info" href="https://noratsai0210.github.io/weather/" target="_blank"
-                        title="">weather forecast</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link link-info" href="https://noratsai0210.github.io/bmi/
-            " target="_blank" title="">BMI</a>
-                </li>
 
-            </ul>
-
-            <div class="container pb-1">
+            <div class="container py-5">
                 <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link  active" id="pills-photoshop-tab" data-bs-toggle="pill"
+                        <button class="nav-link  active" id="pills-html-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-html">切版</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-javascript-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-javascript">js</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-project-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-project">project</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-photoshop-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-photoshop">photoshop</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-illustraor-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-illustraor">illustraor</button>
                     </li>
-
                 </ul>
             </div>
 
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-photoshop" role="tabpanel"
-                    aria-labelledby="pills-photoshop-tab">
+                <div class="tab-pane fade show active" id="pills-html" role="tabpanel" aria-labelledby="pills-html-tab">
+                    <div class="row d-flex justify-content-sm-around  py-2">
+                        <div class="col-sm-5 mb-3">
+                            <div class="card">
+                                <a class="" href="https://noratsai0210.github.io/microsoft/" target="_blank" title="">
+                                    <img src="./img/FireShot_Microsoft.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">微軟仿切</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 mb-3">
+                            <div class="card">
+                                <a class="" href="https://noratsai0210.github.io/bootstrap/" target="_blank" title="">
+                                    <img src="./img/FireShot_bootstrap.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bootstrap v4.6 應用</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 mb-3">
+                            <div class="card">
+                                <a class="" href="https://noratsai0210.github.io/parallax/" target="_blank" title="">
+                                    <img src="" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">滾動視差</h5>
+                                    <p class="card-text"> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="tab-pane fade show" id="pills-javascript" role="tabpanel"
+                    aria-labelledby="pills-javascript-tab">
+                    <div class="row d-flex justify-content-sm-around  py-2">
+                        <div class="col-sm-5 mb-3">
+                            <div class="card">
+                                <a class="" href="https://noratsai0210.github.io/weather/" target="_blank" title="">
+                                    <img src="./img/FireShot_weather.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">天氣卡片</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-5 mb-3">
+                            <div class="card">
+                                <a class="" href="https://noratsai0210.github.io/color-difference/" target="_blank"
+                                    title="">
+                                    <img src="./img/FireShot_color.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">色差遊戲</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-5 mb-3">
+                            <div class="card">
+                                <a class="" href="https://noratsai0210.github.io/game/" target="_blank" title="">
+                                    <img src="./img/FireShot_roshambo.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">猜拳遊戲</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 mb-3">
+                            <div class="card">
+                                <a class="" href="https://noratsai0210.github.io/bmi/" target="_blank" title="">
+                                    <img src="./img/FireShot_bmi.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">BMI計算</h5>
+                                    <p class="card-text"> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade show" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab">
                     <div class="d-flex justify-content-around py-2">
+                        <div class="card" style="width: 18rem;">
+                            <a class="" href="https://111-03-sunyehfy-virus.dev-hub.io/" target="_blank" title="">
+                                <img src="./img/FireShot_covid19.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body p-0">
+                                <h5 class="card-title">團體專題:COVID-19</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="tab-pane fade show " id="pills-photoshop" role="tabpanel"
+                    aria-labelledby="pills-photoshop-tab">
+
+                    <div class="row d-flex justify-content-sm-around  py-2">
+                        <div class="col-sm-4 mb-3">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <a data-lightbox="image-ball">
+                                        <img src="./img/photoshop/0317-ball .jpg" class="w-100 h-100" alt="...">
+                                    </a>
+                                    <div id="popup-content1" style="display:none;">
+                                        <div class="swiper bigSwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/photoshop/0317-ball .jpg" alt="">
+                                                </div>
+
+                                                <!-- <div class="swiper-slide">
+                                                    <img src="./img/photoshop/ball-original.jpg" alt="">
+
+                                                </div> -->
+
+                                            </div>
+                                            <!-- <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div> -->
+
+                                        </div>
+                                        <div thumbsSlider="" class="swiper textSwiper">
+                                            <div class="swiper-wrapper text-light">
+                                                <div class="swiper-slide">
+                                                    <p class="text-center">...</p>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <p class="text-center">原圖</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4 mb-3">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="./img/photoshop/0317-Apple.jpg" class="w-100 h-100" alt="...">
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4 mb-3">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="./img/photoshop/0317-woman.jpg" class="w-100 h-100" alt="...">
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4 mb-3">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="./img/photoshop/0318-wedding-gown.jpg" class="w-100 h-100" alt="...">
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4 mb-3">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="./img/photoshop/0318-color.jpg" class="w-100 h-100" alt="...">
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- <div class="d-flex justify-content-around py-2">
                         <div class="card" style="width: 18rem;">
                             <img src="./img/photoshop/0317-ball .jpg" class="card-img-top" alt="...">
                             <div class="card-body p-0">
@@ -285,58 +509,65 @@
                                 <p class="card-text"></p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
                 <div class="tab-pane fade" id="pills-illustraor" role="tabpanel" aria-labelledby="pills-illustraor-tab">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="0" class="active border-0" aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="1" class="border-0" aria-label="Slide 2"></button>
-                            <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="2" class="border-0" aria-label="Slide 3"></button>
-                            <button type="button" style="background: black;" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="3" class="border-0" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/illustrator/2022-03-21-moon.jpg" class="d-block w-50 mx-auto" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/illustrator/2022-03-21-umbrella.jpg" class="d-block w-50 mx-auto"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/illustrator/2022-03-23-dodoro.jpg" class="d-block w-50 mx-auto"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/illustrator/2022-03-22-LOW POLY.jpg" class="d-block w-50 mx-auto"
-                                    alt="...">
-                            </div>
-                        </div>
 
+                    <div class="swiper mySwiper2"
+                        style="--swiper-navigation-color: black; --swiper-pagination-color: #fff">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a col- data-fancybox data-src="./img/illustrator/2022-03-21-moon.jpg" >
+                                    <img src="./img/illustrator/2022-03-21-moon.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox data-src="./img/illustrator/2022-03-21-umbrella.jpg">
+                                    <img src="./img/illustrator/2022-03-21-umbrella.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox data-src="./img/illustrator/2022-03-23-dodoro.jpg">
+                                    <img src="./img/illustrator/2022-03-23-dodoro.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox data-src="./img/illustrator/2022-03-22-LOW POLY.jpg">
+                                    <img src="./img/illustrator/2022-03-22-LOW POLY.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                icon製作
+                            </div>
+                            <div class="swiper-slide">
+                                icon製作
+                            </div>
+                            <div class="swiper-slide">
+                                pen tool
+                            </div>
+                            <div class="swiper-slide">
+                                low poly
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
 
-        <button type="button" id="BackTop" class="toTop-arrow position-fixed border-0 bg-secondary bg-opacity-75"></button>
+
+
+        <button type="button" id="BackTop"
+            class="toTop-arrow position-fixed border-0 bg-secondary bg-opacity-75"></button>
     </main>
 
     <footer>
@@ -355,8 +586,44 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <!-- fancybox4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
         AOS.init();
+
+        let swiper = new Swiper(".mySwiper", {
+            loop: false,
+            // effect: 'fade',
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        let swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
+
+        Fancybox.bind('[data-fancybox="images"]', {
+            caption: function (fancybox, carousel, slide) {
+                return (
+                    `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+                );
+            },
+        });
 
         $(function () {
             $('#BackTop').click(function () {
@@ -373,6 +640,8 @@
                 }
             }).scroll();
         });
+
+
     </script>
 
 

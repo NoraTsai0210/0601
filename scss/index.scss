@@ -37,6 +37,7 @@ main {
                 background-color: #eeeeee;
                 left: 50%;
                 margin-left: -1.5px;
+
                 @media (max-width: 767px) {
                     left: 40px;
                 }
@@ -50,22 +51,25 @@ main {
                     content: " ";
                     display: table;
                 }
+
                 &:after {
                     content: " ";
                     display: table;
                     clear: both;
                 }
-                img{
+
+                img {
                     width: 40px;
                 }
 
                 .timeline-panel {
-                    width: 46%;
+                    width: 45%;
                     float: left;
                     border: 1px solid #d4d4d4;
                     border-radius: 2px;
                     padding: 20px;
                     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+
                     @media (max-width: 767px) {
                         width: calc(100% - 90px);
                         float: right;
@@ -81,6 +85,7 @@ main {
                         border-right: 0 solid #ccc;
                         border-bottom: 15px solid transparent;
                         content: " ";
+
                         @media (max-width: 767px) {
                             border-left-width: 0;
                             border-right-width: 15px;
@@ -88,6 +93,7 @@ main {
                             right: auto;
                         }
                     }
+
                     &:after {
                         position: absolute;
                         top: 27px;
@@ -98,6 +104,7 @@ main {
                         border-right: 0 solid #fff;
                         border-bottom: 14px solid transparent;
                         content: " ";
+
                         @media (max-width: 767px) {
                             border-left-width: 0;
                             border-right-width: 14px;
@@ -116,6 +123,7 @@ main {
                     top: 16px;
                     left: 50%;
                     margin-left: -25px;
+
                     // z-index: 2;
                     @media (max-width: 767px) {
                         left: 15px;
@@ -125,18 +133,19 @@ main {
 
                 }
 
-                .timeline-body{
-                    p{
+                .timeline-body {
+                    p {
                         margin-bottom: 0;
-                        &+p{
+
+                        &+p {
                             margin-top: 5px;
                         }
                     }
-    
-                    ul{
+
+                    ul {
                         margin-bottom: 0;
                     }
-               }
+                }
             }
 
             .timeline-inverted {
@@ -149,6 +158,7 @@ main {
                         left: -15px;
                         right: auto;
                     }
+
                     &:after {
                         border-left-width: 0;
                         border-right-width: 14px;
@@ -158,16 +168,16 @@ main {
                 }
             }
         }
-       
+
 
         // .timeline-body>p+p {
         //     margin-top: 5px;
         // }
 
-        
+
     }
 
-    #BackTop{
+    #BackTop {
         width: 3.5rem;
         height: 3.5rem;
         border-radius: 33%;
@@ -175,31 +185,105 @@ main {
         right: 1rem;
         bottom: 1rem;
         display: none;
-        &:before{
-            width: 31px;
-            height: 7px;
+
+        &:before {
+            width: 24px;
+            height: 6px;
             border-radius: 3px;
             background: rgb(222, 211, 181);
             position: absolute;
             content: "";
             transform: rotate(-45deg) translate(0, -50%);
-            left: 0.4rem;
+            left: 0.7rem;
         }
 
-        &:after{
-            width: 31px;
-            height: 7px;
+        &:after {
+            width: 24px;
+            height: 6px;
             border-radius: 3px;
             background: rgb(222, 211, 181);
             position: absolute;
             content: "";
             transform: rotate(45deg) translate(0, -50%);
-            right: 0.4rem;
+            right: 0.7rem;
         }
-        &:focus{
+
+        &:focus {
             outline: none;
         }
 
     }
-    
+
+    #portfolio {
+        .tab-content {
+            #pills-html {
+                .col-sm-6 {
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+
+            #pills-photoshop {
+                .col-sm-4 {
+                    .card-img-top {
+                        height: 200px;
+                        width: 300px;
+
+
+                    }
+                }
+            }
+
+            #pills-illustraor {
+
+                .mySwiper2 {
+                    height: 80%;
+                    width: 100%;
+
+                    .swiper-slide {
+                        a {
+                            width: calc(100% - 80px);
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+
+                            img {
+                                width: 20%;
+                                @media screen and (max-width: 991px) {
+                                    width: 30%;                   
+                                }
+                                @media screen and (max-width: 767px) {
+                                    width: 50%;                   
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .mySwiper {
+                    height: 20%;
+                    box-sizing: border-box;
+                    width: calc(100% - 80px);
+                    padding: 10px 0;
+
+                    .swiper-slide {
+                        width: 25%;
+                        height: 100%;
+                        opacity: 0.5;
+                        text-align: center;
+                        font-size: 16px;
+                        background: #000;
+                        color: #fff;
+                    }
+
+                    .swiper-slide-thumb-active {
+                        opacity: 1;
+                      }
+                }
+            }
+        }
+    }
+
+   
 }

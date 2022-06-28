@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,59 +15,39 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .box .line {
   width: 80%;
   height: 50px;
   border: 1px solid black;
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: .2s;
-  transition: .2s;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
   border-radius: 20px;
 }
-
 .box .line1 {
   top: 25%;
 }
-
 .box .line2 {
   top: 50%;
 }
-
 .box .line3 {
   top: 75%;
 }
-
 .box:hover .line1 {
   top: 50%;
-  background-color: #303341;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-  -webkit-transition-property: top ,-webkit-transform;
-  transition-property: top ,-webkit-transform;
-  transition-property: top ,transform;
-  transition-property: top ,transform ,-webkit-transform;
-  -webkit-transition-delay: 0s , 1s , 2s;
-          transition-delay: 0s , 1s , 2s;
+  background-color: rgb(48, 51, 65);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition-property: top, transform;
+  transition-delay: 0s, 1s, 2s;
 }
-
 .box:hover .line2 {
   left: -100%;
 }
-
 .box:hover .line3 {
   top: 50%;
-  background-color: #303341;
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
-  -webkit-transition-property: top ,-webkit-transform;
-  transition-property: top ,-webkit-transform;
-  transition-property: top ,transform;
-  transition-property: top ,transform ,-webkit-transform;
-  -webkit-transition-delay: 0s , 1s , 2s;
-          transition-delay: 0s , 1s , 2s;
-}
-/*# sourceMappingURL=hamburger.css.map */
+  background-color: rgb(48, 51, 65);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition-property: top, transform;
+  transition-delay: 0s, 1s, 2s;
+}/*# sourceMappingURL=hamburger.css.map */

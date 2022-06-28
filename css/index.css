@@ -4,24 +4,20 @@
 }
 
 main #about {
-  font-family: 'Mulish', sans-serif;
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Noto Serif TC", serif;
   height: calc(100vh - 58px);
 }
-
 main #about .profile .text-detail {
   color: darkslateblue;
 }
-
 main #about .profile .photo img {
   max-height: 250px;
 }
-
 main #experience .timeline {
   list-style: none;
   padding: 20px 0 20px;
 }
-
 main #experience .timeline:before {
   top: 0;
   bottom: 0;
@@ -32,50 +28,41 @@ main #experience .timeline:before {
   left: 50%;
   margin-left: -1.5px;
 }
-
 @media (max-width: 767px) {
   main #experience .timeline:before {
     left: 40px;
   }
 }
-
 main #experience .timeline li {
   margin-bottom: 20px;
   position: relative;
 }
-
 main #experience .timeline li:before {
   content: " ";
   display: table;
 }
-
 main #experience .timeline li:after {
   content: " ";
   display: table;
   clear: both;
 }
-
 main #experience .timeline li img {
   width: 40px;
 }
-
 main #experience .timeline li .timeline-panel {
-  width: 46%;
+  width: 45%;
   float: left;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
   padding: 20px;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
-
 @media (max-width: 767px) {
   main #experience .timeline li .timeline-panel {
     width: calc(100% - 90px);
     float: right;
   }
 }
-
 main #experience .timeline li .timeline-panel:before {
   position: absolute;
   top: 26px;
@@ -87,7 +74,6 @@ main #experience .timeline li .timeline-panel:before {
   border-bottom: 15px solid transparent;
   content: " ";
 }
-
 @media (max-width: 767px) {
   main #experience .timeline li .timeline-panel:before {
     border-left-width: 0;
@@ -96,7 +82,6 @@ main #experience .timeline li .timeline-panel:before {
     right: auto;
   }
 }
-
 main #experience .timeline li .timeline-panel:after {
   position: absolute;
   top: 27px;
@@ -108,7 +93,6 @@ main #experience .timeline li .timeline-panel:after {
   border-bottom: 14px solid transparent;
   content: " ";
 }
-
 @media (max-width: 767px) {
   main #experience .timeline li .timeline-panel:after {
     border-left-width: 0;
@@ -117,7 +101,6 @@ main #experience .timeline li .timeline-panel:after {
     right: auto;
   }
 }
-
 main #experience .timeline li .timeline-badge {
   color: #fff;
   width: 50px;
@@ -128,7 +111,6 @@ main #experience .timeline li .timeline-badge {
   left: 50%;
   margin-left: -25px;
 }
-
 @media (max-width: 767px) {
   main #experience .timeline li .timeline-badge {
     left: 15px;
@@ -136,37 +118,30 @@ main #experience .timeline li .timeline-badge {
     top: 16px;
   }
 }
-
 main #experience .timeline li .timeline-body p {
   margin-bottom: 0;
 }
-
 main #experience .timeline li .timeline-body p + p {
   margin-top: 5px;
 }
-
 main #experience .timeline li .timeline-body ul {
   margin-bottom: 0;
 }
-
 main #experience .timeline .timeline-inverted .timeline-panel {
   float: right;
 }
-
 main #experience .timeline .timeline-inverted .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
-
 main #experience .timeline .timeline-inverted .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
   right: auto;
 }
-
 main #BackTop {
   width: 3.5rem;
   height: 3.5rem;
@@ -176,32 +151,74 @@ main #BackTop {
   bottom: 1rem;
   display: none;
 }
-
 main #BackTop:before {
-  width: 31px;
-  height: 7px;
+  width: 24px;
+  height: 6px;
   border-radius: 3px;
-  background: #ded3b5;
+  background: rgb(222, 211, 181);
   position: absolute;
   content: "";
-  -webkit-transform: rotate(-45deg) translate(0, -50%);
-          transform: rotate(-45deg) translate(0, -50%);
-  left: 0.4rem;
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.7rem;
 }
-
 main #BackTop:after {
-  width: 31px;
-  height: 7px;
+  width: 24px;
+  height: 6px;
   border-radius: 3px;
-  background: #ded3b5;
+  background: rgb(222, 211, 181);
   position: absolute;
   content: "";
-  -webkit-transform: rotate(45deg) translate(0, -50%);
-          transform: rotate(45deg) translate(0, -50%);
-  right: 0.4rem;
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.7rem;
 }
-
 main #BackTop:focus {
   outline: none;
 }
-/*# sourceMappingURL=index.css.map */
+main #portfolio .tab-content #pills-html .col-sm-6 img {
+  width: 90%;
+}
+main #portfolio .tab-content #pills-photoshop .col-sm-4 .card-img-top {
+  height: 200px;
+  width: 300px;
+}
+main #portfolio .tab-content #pills-illustraor .mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+main #portfolio .tab-content #pills-illustraor .mySwiper2 .swiper-slide a {
+  width: calc(100% - 80px);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+main #portfolio .tab-content #pills-illustraor .mySwiper2 .swiper-slide a img {
+  width: 20%;
+}
+@media screen and (max-width: 991px) {
+  main #portfolio .tab-content #pills-illustraor .mySwiper2 .swiper-slide a img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  main #portfolio .tab-content #pills-illustraor .mySwiper2 .swiper-slide a img {
+    width: 50%;
+  }
+}
+main #portfolio .tab-content #pills-illustraor .mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  width: calc(100% - 80px);
+  padding: 10px 0;
+}
+main #portfolio .tab-content #pills-illustraor .mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+}
+main #portfolio .tab-content #pills-illustraor .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */
