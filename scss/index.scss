@@ -188,6 +188,18 @@ main {
                 .card-img-top {
                     width: 400px;
                     height: 250px;
+                    &:hover {
+                        transform: scale(1.1);
+                        transition-duration: .6s;
+                    }
+
+                    @media screen and (max-width: 1170px) {
+                        width: 100%;
+                        height: 100%;
+                        padding-left: 2vw;
+                        padding-right: 2vw;
+                    }
+
                 }
 
             }
@@ -200,7 +212,6 @@ main {
                     .card-img-top {
                         height: 200px;
                         width: 300px;
-
 
                         .bigSwiper {
                             height: 80%;
@@ -241,11 +252,6 @@ main {
 
                             img {
                                 width: 20%;
-
-                                &:hover {
-                                    transform: scale(1.1);
-                                    transition-duration: .6s;
-                                }
 
                                 @media screen and (max-width: 991px) {
                                     width: 30%;
@@ -322,7 +328,7 @@ main {
 
 }
 
-[v-cloak]{
+[v-cloak] {
     display: none;
 }
 
@@ -332,6 +338,9 @@ main {
 
     .fancybox__content {
         max-width: 100%;
+        @media screen and (max-width: 1170px) {
+            max-width: 85vw;
+        }
 
         .swiper {
             margin: 0;
