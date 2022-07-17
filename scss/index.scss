@@ -7,7 +7,7 @@ main {
     #about {
         font-family: 'Mulish', sans-serif;
         font-family: 'Noto Serif TC', serif;
-        height: calc(100vh - 58px);
+        // height: calc(100vh - 58px);
 
         .profile {
             .text-detail {
@@ -15,9 +15,15 @@ main {
             }
 
             .photo {
-                img {
-                    max-height: 250px;
+                .rounded-circle{
+                    width: 200px;
+                    height: 200px;
+                    overflow: hidden;
+                    img {
+                        max-width: 100%;
+                    }
                 }
+                
             }
         }
 
@@ -202,6 +208,14 @@ main {
 
                 }
 
+                .card-body{
+                    h5{
+                        letter-spacing: 5pt;
+                        opacity: 0.6;
+                       
+                    }
+                }
+
             }
 
 
@@ -292,17 +306,17 @@ main {
     #BackTop {
         width: 3.5rem;
         height: 3.5rem;
-        border-radius: 33%;
+        border-radius: 30%;
         cursor: pointer;
-        right: 1rem;
-        bottom: 1rem;
+        right: 2rem;
+        bottom: 2rem;
         display: none;
 
         &:before {
             width: 24px;
             height: 6px;
             border-radius: 3px;
-            background: rgb(222, 211, 181);
+            background:white;
             position: absolute;
             content: "";
             transform: rotate(-45deg) translate(0, -50%);
@@ -313,7 +327,7 @@ main {
             width: 24px;
             height: 6px;
             border-radius: 3px;
-            background: rgb(222, 211, 181);
+            background: white;
             position: absolute;
             content: "";
             transform: rotate(45deg) translate(0, -50%);
@@ -353,6 +367,7 @@ main {
 
 
         .stateSwiper {
+            padding-top: 5px;
             .swiper-slide {
                 background-color: black;
                 color: #fff;
